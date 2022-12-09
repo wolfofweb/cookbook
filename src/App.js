@@ -1,6 +1,6 @@
 import Pages from "./pages/Pages";
 import Category from "./components/Category";
-import { BrowserRouter, NavLink } from "react-router-dom";
+import { HashRouter, NavLink } from "react-router-dom";
 import Search from "./components/Search";
 import Footer from "./components/Footer";
 import styled from "styled-components";
@@ -10,7 +10,7 @@ import Nav from "./components/Nav";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <HashRouter>
         <Nav />
         <Navigation>
           <Logo to={"/"}>
@@ -22,7 +22,7 @@ function App() {
         <Category />
         <Pages />
         <Footer />
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
